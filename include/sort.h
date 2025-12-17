@@ -37,13 +37,6 @@ bool lettersInOrder(char char1, char char2);
 bool numbersAscending(char num1, char num2);
 
 /**
- * @brief A function pointer which is passed to bubbleSort. It accepts either
- * lettersInOrder or numbersAscending.
- *
- */
-extern bool (*pairIsInOrder)(char a, char b);
-
-/**
  * @brief Swaps the elements at index1 and index2 in the passed array by using
  * placeholder variables.
  *

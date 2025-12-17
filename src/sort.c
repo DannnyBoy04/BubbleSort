@@ -32,9 +32,6 @@ bool numbersAscending(char num1, char num2) {
   return false;
 }
 
-// Function pointer to lettersInOrder or numbersAscending.
-bool (*pairIsInOrder)(char a, char b);
-
 // Swaps two elements in an array.
 void swap(size_t index1, size_t index2, char arr[]) {
   int placeholder1 = arr[index1];
@@ -46,7 +43,7 @@ void swap(size_t index1, size_t index2, char arr[]) {
 
 // Sorts the contents of arr into the passed array called sortedArray.
 void bubbleSort(const char arr[], size_t len,
-                bool pairIsInOrder(char a, char b), char sortedArray[]) {
+                bool (*pairIsInOrder)(char a, char b), char sortedArray[]) {
   for (size_t i = 0; i < len; i++) {
     sortedArray[i] = arr[i];
   }
