@@ -37,7 +37,7 @@ bool lettersInOrder(char char1, char char2);
 bool numbersAscending(char num1, char num2);
 
 /**
- * @brief A function pointer to which is passed to bubbleSort. It accepts either
+ * @brief A function pointer which is passed to bubbleSort. It accepts either
  * lettersInOrder or numbersAscending.
  *
  */
